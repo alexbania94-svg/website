@@ -538,3 +538,9 @@ nav.main a{white-space:nowrap}
 .legal-table th,.legal-table td{border:1px solid #ddd;padding:5px 8px;text-align:left}
 .legal-table th{font-weight:600;background:rgba(0,0,0,.03)}
 @media (max-width:640px){.legal p,.legal li{text-align:left}}
+
+/* v8: αρχική φωτογραφία ολόκληρη σε φαρδιές οθόνες (όχι κόψιμο κεφαλιού) */
+@media (min-width:761px){
+ .hero-ph .bg{position:absolute;top:0;right:0;left:auto;height:100%;width:auto;max-width:none;object-fit:initial;
+  -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 22%);mask-image:linear-gradient(90deg,transparent 0,#000 22%)}
+}
