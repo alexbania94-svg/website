@@ -562,3 +562,55 @@ footer.site .fine{padding-right:0}
 .sources ol{font-size:.76rem;line-height:1.4;padding-left:1.7em}
 .sources li{margin-bottom:.2em}
 .sources li a{text-decoration-thickness:1px}
+
+/* Γραμμή για την ΤΝ στο footer: πολύ μικρή και αχνή */
+footer.site .fine .ai-line{font-size:.66rem;opacity:.7}
+
+/* Μετάβαση στο περιεχόμενο (εμφανίζεται μόνο με πληκτρολόγιο) */
+.skip-link{position:absolute;left:12px;top:-60px;z-index:100;background:var(--deep);color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-size:.9rem}
+.skip-link:focus{top:12px}
+/* Σύνδεσμος ονόματος στο byline */
+.byline a{color:inherit;text-decoration:underline;text-decoration-color:rgba(0,0,0,.25);text-underline-offset:3px}
+/* Μικρός σύνδεσμος «Πώς γράφω τα άρθρα» στη σελίδα Άρθρα */
+.howto-link{margin-top:14px;font-size:.88rem}
+.howto-link a{color:var(--green);text-decoration:underline;text-decoration-color:rgba(0,0,0,.25);text-underline-offset:3px}
+
+/* v9: σταθερό κουμπί πιο λεπτό, κρύβεται όταν φαίνεται άλλο κουμπί ραντεβού */
+@media (max-width:760px){
+ .sticky-cta{left:28px;right:28px;bottom:12px;padding:10px 14px;font-size:.92rem}
+ .cta-visible .sticky-cta{transform:translateY(160%);pointer-events:none}
+}
+/* v9: πηγές που ανοίγουν με ένα πάτημα */
+.sources details>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.sources details>summary::-webkit-details-marker{display:none}
+.sources details>summary h2{margin:0}
+.sources details>summary::after{content:"";width:9px;height:9px;border-right:2px solid var(--green);border-bottom:2px solid var(--green);transform:rotate(45deg);transition:transform .2s ease;margin-right:6px;flex:none}
+.sources details[open]>summary::after{transform:rotate(-135deg)}
+.sources details[open]>summary{margin-bottom:.6em}
+/* v9: κινητό, τηλέφωνο και email ως κουμπιά */
+@media (max-width:760px){
+ .contact-cards .big-tel,.contact-cards .big-mail{display:block;width:100%;box-sizing:border-box;padding:13px 16px;border-radius:999px;font-family:var(--sans);font-weight:600;font-size:1rem;text-decoration:none;word-break:normal;overflow-wrap:anywhere}
+ .contact-cards .big-tel{background:var(--deep);color:#fff}
+ .contact-cards .big-mail{background:transparent;color:var(--deep);border:1.5px solid var(--deep)}
+}
+/* v9: tablet όρθιο (761–900px): μενού με κουμπί, όπως στο κινητό, για να μη βγαίνει η σελίδα εκτός οθόνης */
+@media (min-width:761px) and (max-width:900px){
+ nav.main{display:none;position:absolute;top:100%;left:0;right:0;background:var(--bg);flex-direction:column;align-items:flex-end;text-align:right;padding:18px 32px 24px;border-bottom:1px solid var(--line);gap:16px}
+ nav.main.open{display:flex}
+ nav.main a{font-size:1rem}
+ .menu-toggle{display:block;background:none;border:1.5px solid var(--deep);border-radius:999px;padding:8px 16px;font:600 .9rem var(--sans);color:var(--deep);cursor:pointer}
+ .logo img{height:54px}
+ body.menu-open::after{content:"";position:fixed;inset:0;background:rgba(31,51,40,.28);z-index:40}
+ body.menu-open header.site{z-index:50}
+ .sticky-cta{display:block;position:fixed;left:0;right:0;margin:0 auto;width:max-content;bottom:16px;z-index:30;background:var(--deep);color:#fff;text-decoration:none;font-weight:600;padding:12px 28px;border-radius:999px;box-shadow:0 10px 30px -10px rgba(0,0,0,.5);transform:translateY(160%);transition:transform .25s ease;pointer-events:none}
+ .past-hero .sticky-cta{transform:none;pointer-events:auto}
+ .at-footer .sticky-cta,.cta-visible .sticky-cta{transform:translateY(160%);pointer-events:none}
+}
+/* v9: tablet όρθιο: η φωτογραφία της αρχικής πάνω και το κείμενο από κάτω, για να μην κρύβεται το πρόσωπο */
+@media (min-width:761px) and (max-width:900px){
+ .hero-ph{display:block;min-height:0}
+ .hero-ph picture{position:static;display:block}
+ .hero-ph .bg{position:static;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:72% 25%;-webkit-mask-image:none;mask-image:none}
+ .hero-ph::after{display:none}
+ .hero-ph .txt{max-width:640px;padding:32px 0 48px}
+}
