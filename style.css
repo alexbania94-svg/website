@@ -556,3 +556,9 @@ footer.site .fine{padding-right:0}
  footer.site .fine{padding-right:0}
 }
 @media (prefers-reduced-motion:reduce){footer.site .to-top{transition:none}}
+
+.sources{margin-top:1.6em;padding-top:.8em}
+.sources h2{font-size:1.1rem;margin:0 0 .4em}
+.sources ol{font-size:.76rem;line-height:1.4;padding-left:1.7em}
+.sources li{margin-bottom:.2em}
+.sources li a{text-decoration-thickness:1px}
