@@ -858,3 +858,86 @@ header.site.shrink .logo img{height:52px}
  #rantevou .split{align-items:center}
  .start-more .services{margin-top:36px}
 }
+/* v27: footer απλωμένο σε όλο το πλάτος, νομικά δεξιά */
+footer.site .fine .legal-links{white-space:nowrap}
+@media (max-width:1024px){footer.site .fine .legal-links{display:block;margin-top:6px}}
+@media (min-width:1025px){
+ footer.site .wrap{grid-template-columns:auto auto auto;justify-content:space-between;column-gap:48px}
+ footer.site .fine{display:flex;justify-content:space-between;align-items:baseline;gap:6px 32px}
+}
+/* v27: Θέματα υγείας, κάθε ενότητα κεντραρισμένη με άνετο πλάτος κειμένου */
+@media (min-width:1025px){
+ .cond-section .wrap{grid-template-columns:280px 1fr;justify-content:stretch;column-gap:56px}
+ .cond-img{width:280px;height:280px}
+ .cond-section:nth-of-type(even) .cond-img{border-radius:140px 140px 22px 22px}
+}
+@media (min-width:2200px){
+ .cond-section .wrap{grid-template-columns:320px 1fr}
+ .cond-img{width:320px;height:320px}
+}
+@media (min-width:1025px){.cond-section .prose{max-width:none}}
+/* v28: άρθρα, τίτλος + εισαγωγή + εικόνα στην πρώτη οθόνη, κείμενο πιο απλωμένο */
+.ah-grid .article-img{max-width:none;margin:18px 0 0;padding:0}
+.ah-grid .article-img img{width:100%;object-fit:cover}
+@media (max-width:760px){
+ .article-hero{padding:22px 0 8px}
+ .article-hero h1{font-size:1.9rem;margin-bottom:10px}
+ .article-hero .lead{font-size:1rem;line-height:1.6;margin-bottom:0}
+ .article-hero .byline{margin-top:8px;font-size:.8rem}
+ .ah-grid .article-img{margin-top:12px}
+ .ah-grid .article-img img{aspect-ratio:16/7;max-height:150px;border-radius:16px}
+}
+@media (min-width:761px) and (max-width:1024px){
+ .article-hero{padding:30px 0 10px}
+ .article-hero .wrap,.article-body .wrap{max-width:none}
+ .ah-grid .article-img img{aspect-ratio:16/6;max-height:300px}
+}
+@media (min-width:1025px){
+ .article-hero{padding:44px 0 10px}
+ .article-hero .wrap.ah-grid{max-width:1120px;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+ .article-body .wrap{max-width:1120px}
+ .ah-grid .article-img{margin:0}
+ .ah-grid .article-img img{aspect-ratio:4/3.4;max-height:none;border-radius:22px}
+ .article-hero h1{font-size:clamp(2.2rem,3.2vw,3rem)}
+}
+@media (min-width:1700px){
+ .article-hero .wrap.ah-grid,.article-body .wrap{max-width:1240px}
+}
+@media (min-width:2200px){
+ .article-hero .wrap.ah-grid,.article-body .wrap{max-width:1400px}
+}
+/* κινητό οριζόντιο: εικόνα δίπλα στο κείμενο */
+@media (orientation:landscape) and (max-height:500px){
+ .article-hero{padding:16px 0 8px}
+ .article-hero .wrap.ah-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:22px;align-items:start}
+ .article-hero h1{font-size:1.7rem}
+ .ah-grid .article-img{margin:0}
+ .ah-grid .article-img img{aspect-ratio:1/1;max-height:180px;margin-top:8px}
+}
+/* v29: Instagram και λογαριασμοί σε περισσότερα σημεία */
+.follow-line{margin:22px 0 0;padding:14px 18px;border:1px solid var(--line);border-radius:16px;background:var(--paper);font-size:.95rem;display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px}
+.follow-line a{display:inline-flex;align-items:center;gap:7px;font-weight:600;color:var(--deep)}
+.follow-line a svg{flex:none}
+.find-me{margin:34px auto 0;max-width:760px;text-align:center}
+.find-me h3{margin-bottom:4px}
+.find-me .muted{margin:0 0 14px}
+.soc-row{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}
+.soc{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border:1.5px solid var(--deep);border-radius:999px;color:var(--deep);text-decoration:none;font-weight:600;font-size:.92rem;background:transparent;transition:background .2s,color .2s}
+.soc:hover,.soc:focus-visible{background:var(--deep);color:#fff}
+footer.site .f-icons{display:flex;gap:8px;margin:0}
+@media (min-width:761px) and (max-width:1024px){footer.site .wrap{grid-template-columns:1fr 1fr;gap:18px 34px}}
+@media (min-width:1025px){footer.site .wrap{grid-template-columns:auto auto auto auto}}
+@media (max-width:760px){
+ footer.site .wrap>div:first-child{display:block}
+ .soc{padding:9px 14px;font-size:.88rem}
+}
+.fb-line a{display:inline-flex;align-items:center;gap:7px}
+/* v30: τέλος άρθρου, Πηγές → Κλείστε ραντεβού → Instagram */
+.article-body .sources + .muted.small{margin-bottom:26px}
+/* v31: ψυχολογία επισκέπτη */
+.cond-cta{margin:10px 0 0;font-weight:600}
+.cond-cta a{color:var(--deep)}
+.reassure{list-style:none;padding:0;margin:14px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.reassure li{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:999px;background:var(--sage-l);color:var(--deep);font-size:.86rem;font-weight:600}
+.reassure li::before{content:"✓";font-weight:700}
+@media (max-width:760px){.reassure{gap:6px;margin-top:10px}.reassure li{font-size:.8rem;padding:5px 10px}}
