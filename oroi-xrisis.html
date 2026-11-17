@@ -15,7 +15,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:locale" content="el_GR">
 <link rel="stylesheet" href="fonts/fonts.css">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=20261117c">
 <link rel="alternate" type="application/rss+xml" title="Άρθρα – Αλεξάνδρα Μπανιά" href="https://alexandrabania.com/feed.xml">
 </head>
 <body>
@@ -92,5 +92,6 @@
 <script>(function(){var n=document.getElementById("nav"),b=document.querySelector(".menu-toggle");if(!n||!b)return;function sync(){document.body.classList.toggle("menu-open",n.classList.contains("open"))}function close(){n.classList.remove("open");b.setAttribute("aria-expanded","false");sync()}b.addEventListener("click",sync);document.addEventListener("click",function(e){if(n.classList.contains("open")&&!n.contains(e.target)&&!b.contains(e.target))close()});document.addEventListener("keydown",function(e){if(e.key==="Escape"&&n.classList.contains("open"))close()})})();</script>
 <script>(function(){var t=document.querySelector(".to-top");if(!t)return;if(document.querySelector(".sticky-cta"))document.body.classList.add("has-sticky");var tk=false;function f(){tk=false;t.classList.toggle("show",window.scrollY>600)}window.addEventListener("scroll",function(){if(!tk){tk=true;requestAnimationFrame(f)}},{passive:true});f()})();</script>
 <script>(function(){var s=document.querySelector(".sticky-cta");if(!s||!("IntersectionObserver" in window))return;var seen=new Set();var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)seen.add(e.target);else seen.delete(e.target)});document.body.classList.toggle("cta-visible",seen.size>0)},{threshold:0});document.querySelectorAll(".cta-box,.cta-band,.contact-cards,.hero-ph .btns,.page-hero .btn").forEach(function(el){io.observe(el)})})();</script>
+<script>(function(){function r(){var m=document.querySelector("meta[name=viewport]");if(!m)return;m.setAttribute("content","width=device-width,initial-scale=1,maximum-scale=1");setTimeout(function(){m.setAttribute("content","width=device-width,initial-scale=1")},400)}window.addEventListener("orientationchange",r);if(screen.orientation&&screen.orientation.addEventListener)screen.orientation.addEventListener("change",r)})();</script>
 </body>
 </html>
