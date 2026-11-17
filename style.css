@@ -780,3 +780,81 @@ header.site.shrink .logo img{height:52px}
 @media (min-width:761px) and (max-width:1100px){header.site.shrink .logo img{height:42px}}
 @media (max-width:760px){header.site.shrink .logo img{height:36px}}
 @media (orientation:landscape) and (max-height:500px){header.site.shrink .logo img{height:34px}}
+
+/* v22: μεγάλες οθόνες υπολογιστή, η σελίδα απλώνεται και τα άρθρα μπαίνουν 4 στη σειρά */
+.home-posts .pcard:nth-child(4){display:none}
+@media (min-width:1367px),(min-width:1200px) and (pointer:fine){
+ .home-posts .pcard:nth-child(4){display:block}
+ .photo-cards.home-posts,.photo-cards.all-posts{grid-template-columns:repeat(4,1fr);gap:20px}
+}
+@media (min-width:1300px){
+ .wrap{max-width:min(90vw,1480px);padding:0 28px}
+ .trust5 .wrap,.trust4 .wrap{max-width:min(90vw,1480px)}
+}
+@media (min-width:1700px){
+ body{font-size:18px}
+ .wrap{max-width:min(88vw,1640px);padding:0 32px}
+ .trust5 .wrap,.trust4 .wrap{max-width:min(88vw,1640px)}
+ .article-hero .wrap,.article-body .wrap,.legal .wrap{max-width:880px}
+ .logo img{height:80px}
+ header.site.shrink .logo img{height:56px}
+}
+@media (min-width:2200px){
+ body{font-size:20px}
+ .wrap{max-width:min(86vw,1960px)}
+ .trust5 .wrap,.trust4 .wrap{max-width:min(86vw,1960px)}
+ .article-hero .wrap,.article-body .wrap,.legal .wrap{max-width:980px}
+ .logo img{height:90px}
+ header.site.shrink .logo img{height:62px}
+}
+/* v23: πιο ήπιες φωτογραφίες σε υπολογιστή (κύκλος με τα φλιτζάνια, φωτογραφίες μου στις σελίδες) */
+@media (min-width:1025px){
+ .band .media img{width:100%;max-width:360px;height:auto;aspect-ratio:1;object-fit:cover;margin:0 auto;border-width:8px}
+ .page-hero .portrait,.page-hero .ring{max-width:330px;margin-left:auto}
+ .portrait{max-width:380px}
+ .ring{max-width:440px}
+}
+@media (min-width:1700px){
+ .band .media img{max-width:400px}
+ .page-hero .portrait,.page-hero .ring{max-width:360px}
+ .portrait{max-width:420px}
+ .ring{max-width:480px}
+ .hero-ph .txt{max-width:600px}
+ .lead{max-width:640px}
+}
+@media (min-width:2200px){
+ .band .media img{max-width:460px}
+ .page-hero .portrait,.page-hero .ring{max-width:400px}
+ .portrait{max-width:460px}
+ .ring{max-width:540px}
+ .hero-ph .txt{max-width:700px}
+ .lead{max-width:740px}
+}
+@media (min-width:1025px){
+ .split .media img:not(.band .media img){max-width:400px;margin-left:auto;margin-right:auto}
+}
+@media (min-width:2200px){
+ .split .media img:not(.band .media img){max-width:500px}
+}
+/* v24: μικρότερη φωτογραφία στην αρχή στις Υπηρεσίες, Θέματα υγείας, Άρθρα */
+@media (min-width:1025px){.page-hero.hero-sm .portrait,.page-hero.hero-sm .ring{max-width:260px}}
+@media (min-width:1700px){.page-hero.hero-sm .portrait,.page-hero.hero-sm .ring{max-width:290px}}
+@media (min-width:2200px){.page-hero.hero-sm .portrait,.page-hero.hero-sm .ring{max-width:330px}}
+@media (min-width:1700px) and (max-width:2199px){.split .media img:not(.band .media img){max-width:440px}}
+/* v25: υπολογιστής, πιο χαμηλές εικόνες στην αρχή των άρθρων και στις δύο επιλογές των Υπηρεσιών */
+@media (min-width:1025px){
+ .article-img img{aspect-ratio:16/7;object-fit:cover}
+ .opt img{aspect-ratio:16/7;object-fit:cover}
+}
+/* v26: «Πώς ξεκινάμε», εικόνα δίπλα στα 1-2-3, από κάτω οι δύο υπηρεσίες δίπλα-δίπλα */
+.start-more .services{margin-top:26px}
+.start-links{margin:20px 0 0;display:flex;flex-direction:column;gap:6px}
+.start-links .muted{display:block}
+@media (min-width:701px){
+ .start-more .services.short{grid-template-columns:1fr 1fr}
+ .start-links{flex-direction:row;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:8px 24px}
+}
+@media (min-width:1025px){
+ #rantevou .split{align-items:center}
+ .start-more .services{margin-top:36px}
+}
