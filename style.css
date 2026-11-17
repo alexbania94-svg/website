@@ -768,3 +768,15 @@ ul.learn li::marker{color:var(--sage)}
 
 /* v20: παράγραφος με email χωρίς πλήρη στοίχιση (αποφεύγει μεγάλα κενά) */
 .justify p.no-justify,p.no-justify{text-align:left;hyphens:manual;-webkit-hyphens:manual}
+
+/* v21: η μπάρα στενεύει με το scroll χωρίς να «πηδάει» η σελίδα (το κενό που αφήνει γεμίζει με margin) */
+header.site{transition:box-shadow .2s,margin-bottom .25s ease}
+header.site .wrap{transition:padding .25s ease}
+header.site .logo img{transition:height .25s ease}
+header.site.no-tr,header.site.no-tr *{transition:none!important}
+header.site.shrink{margin-bottom:var(--hd,0px)}
+header.site.shrink .wrap{padding-top:4px;padding-bottom:4px}
+header.site.shrink .logo img{height:52px}
+@media (min-width:761px) and (max-width:1100px){header.site.shrink .logo img{height:42px}}
+@media (max-width:760px){header.site.shrink .logo img{height:36px}}
+@media (orientation:landscape) and (max-height:500px){header.site.shrink .logo img{height:34px}}
