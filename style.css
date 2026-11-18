@@ -1109,3 +1109,11 @@ header.site .logo img{height:60px}
  .f2-fine{margin-top:34px}
 }
 @media (min-width:1101px){.f2-sub .creds{display:block;margin-bottom:2px}.f2-dot{display:none}}
+@media (min-width:1101px){
+ .f2-brand{gap:10px}
+ .f2-sub,.f2-follow{padding-left:57px}
+ .f2-sub{font-size:.82rem;color:#C9D3CA;line-height:1.55}
+ .f2-sub .creds{color:#C9D3CA;letter-spacing:.03em;margin-bottom:0}
+ footer.site.f2 .f2-follow h4{font-size:.72rem;letter-spacing:.12em;margin-bottom:8px;font-weight:400}
+ footer.site.f2 .f2-follow .ig{width:34px;height:34px}
+}
