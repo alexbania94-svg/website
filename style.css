@@ -1155,3 +1155,5 @@ header.site .logo img{height:60px}
  .article-body .prose{grid-template-columns:minmax(0,1fr) 210px;column-gap:26px}
 }
 #pos-grafo{margin-top:1.3em}
+/* v36: Πηγές, πράσινο «Κλείστε ραντεβού» και γραμμή Instagram έξω από τη στήλη του κειμένου, σε όλο το πλάτος (τα περιεχόμενα σταματούν στη γραμμή των Πηγών) */
+.article-body .wrap>.follow-line{margin-top:22px}
