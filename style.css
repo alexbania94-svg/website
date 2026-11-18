@@ -1094,3 +1094,18 @@ header.site .logo img{height:60px}
  .hero-ph .txt{max-width:760px;padding:32px 0 40px}
  .hero-ph h1{font-size:3rem}
 }
+/* footer υπολογιστή v3: πιο μαζεμένο, χωρίς κενά (Nov 2026) */
+@media (min-width:1101px){
+ footer.site.f2 .wrap{grid-template-columns:1.25fr .75fr 1fr 1fr;grid-template-areas:"brand nav book book" "follow nav book book" "fine fine fine fine";column-gap:56px;align-items:start}
+ .f2-sep{display:none}
+ .f2-brand{flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:12px;padding-bottom:22px}
+ .f2-sub{font-size:.82rem;line-height:1.5;max-width:300px}
+ .f2-follow{padding-bottom:0}
+ footer.site.f2 .f2-follow h4{font-size:.95rem;font-family:var(--sans);font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:#93A296;margin-bottom:10px}
+ .f2-book{display:grid;grid-template-columns:1fr 1fr;column-gap:40px}
+ .f2-book h4{grid-column:1/-1}
+ .f2-book p+p{margin-top:0}
+ .f2-nav ul{gap:8px}
+ .f2-fine{margin-top:34px}
+}
+@media (min-width:1101px){.f2-sub .creds{display:block;margin-bottom:2px}.f2-dot{display:none}}
