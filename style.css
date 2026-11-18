@@ -1157,3 +1157,29 @@ header.site .logo img{height:60px}
 #pos-grafo{margin-top:1.3em}
 /* v36: Πηγές, πράσινο «Κλείστε ραντεβού» και γραμμή Instagram έξω από τη στήλη του κειμένου, σε όλο το πλάτος (τα περιεχόμενα σταματούν στη γραμμή των Πηγών) */
 .article-body .wrap>.follow-line{margin-top:22px}
+/* v24: Επικοινωνία: τα κουτιά ραντεβού μέσα στην αρχή της σελίδας.
+   Κινητό και tablet: ίδια εμφάνιση με πριν. */
+.contact-hero{padding-bottom:0}
+.contact-hero .contact-cards{grid-column:1/-1;margin-top:20px}
+.contact-main.block{padding-top:0}
+@media (max-width:700px){.contact-hero .contact-cards{margin-top:32px}}
+@media (orientation:landscape) and (max-height:500px){.contact-hero .contact-cards{margin-top:-2px}}
+@media (orientation:landscape) and (max-height:500px) and (max-width:700px){.contact-hero .contact-cards{margin-top:28px}}
+/* Υπολογιστής (ποντίκι): κουτιά κάτω από τον τίτλο, φωτογραφία δεξιά στο ίδιο ύψος */
+@media (min-width:1100px) and (hover:hover) and (pointer:fine){
+ .contact-hero{padding-bottom:0}
+ .contact-hero .wrap{grid-template-columns:minmax(0,1fr) 330px;grid-template-rows:auto auto;column-gap:48px;row-gap:40px;align-items:stretch}
+ .contact-hero .ch-text{grid-column:1;grid-row:1;align-self:end}
+ .contact-hero .portrait{grid-column:2;grid-row:1/3;max-width:none;width:100%;margin:0}
+ .contact-hero .portrait img{height:100%;aspect-ratio:auto;object-position:50% 30%}
+ .contact-hero .contact-cards{grid-column:1;grid-row:2;margin-top:0;align-self:end}
+ .contact-hero .card:not(:has(.partner)) h3{margin-top:40px}
+ .contact-main.block{padding-top:24px}
+}
+@media (min-width:1700px) and (hover:hover) and (pointer:fine){.contact-hero .wrap{grid-template-columns:minmax(0,1fr) 360px}}
+@media (min-width:1100px) and (hover:hover) and (pointer:fine){.contact-hero .big-mail{word-break:normal;white-space:nowrap}}
+@media (min-width:1100px) and (max-width:1299px) and (hover:hover) and (pointer:fine){
+ .contact-hero .wrap{grid-template-columns:minmax(0,1fr) 290px;column-gap:40px}
+ .contact-hero .card{padding:26px 20px}
+ .contact-hero .big-mail{font-size:1.15rem}
+}
