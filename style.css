@@ -1117,3 +1117,21 @@ header.site .logo img{height:60px}
  footer.site.f2 .f2-follow h4{font-size:.72rem;letter-spacing:.12em;margin-bottom:8px;font-weight:400}
  footer.site.f2 .f2-follow .ig{width:34px;height:34px}
 }
+/* v32: άρθρα με άνετο πλάτος ανάγνωσης, περιεχόμενα στο πλάι σε υπολογιστή.
+   Πλήρης στοίχιση στα κείμενα σε tablet και υπολογιστή, αριστερή στο κινητό */
+@media (min-width:761px){
+ .article-body .prose>p,.article-body .prose>ol>li,.article-body .prose>ul>li,
+ .article-body .prose>.note,.article-body .note p,.cond-section .prose p{text-align:justify;hyphens:auto;-webkit-hyphens:auto;hyphenate-limit-chars:8 4 4;text-wrap:pretty}
+ .article-body .prose p.muted,.cond-section .prose p.cond-cta,.cond-section .prose p.related{text-align:left;hyphens:manual;-webkit-hyphens:manual}
+}
+@media (min-width:761px) and (max-width:1024px){
+ .article-hero .wrap,.article-body .wrap{max-width:780px}
+}
+@media (min-width:1025px){
+ .article-body .prose{display:grid;grid-template-columns:minmax(0,700px) 260px;column-gap:72px;justify-content:space-between}
+ .article-body .prose>*{grid-column:1;margin-top:0}
+ .article-body .prose>h2{margin-top:.55em}
+ .article-body .prose>.toc{grid-column:2;grid-row:1/span 300;align-self:start;position:sticky;top:96px;margin:0;font-size:.92rem}
+ .article-body .prose>.toc li{margin:.55em 0;line-height:1.4}
+}
+@media (min-width:1025px){.cond-section .wrap{max-width:1120px}}
