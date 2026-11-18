@@ -1080,7 +1080,7 @@ header.site .logo img{height:60px}
 }
 @media (min-width:761px) and (max-width:900px) and (min-height:501px){nav.main a.btn{display:none}}
 /* hero: φωτογραφία έναν τόνο πιο χαμηλά, να μην «καίει» (Nov 2026) */
-.hero-ph .bg{filter:brightness(.82)}
+.hero-ph .bg{filter:brightness(.92)}
 /* hero σε κινητό & tablet κάθετο: ολόκληρη η φαρδιά φωτογραφία, χωρίς κόψιμο (Nov 2026) */
 @media (max-width:900px){
  .hero-ph .bg{aspect-ratio:2200/1228!important;height:auto!important;object-fit:cover!important;object-position:50% 50%!important}
