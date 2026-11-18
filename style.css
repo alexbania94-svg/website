@@ -1039,7 +1039,7 @@ footer.site.f2 .f-icons{display:flex;gap:10px;margin:0}
  footer.site.f2 .f2-follow .f-icons{justify-content:flex-end}
 }
 @media (max-width:600px){
- footer.site.f2{padding-bottom:96px}
+ footer.site.f2{padding-bottom:28px}
  footer.site.f2 .wrap{grid-template-columns:1fr;grid-template-areas:"brand" "follow" "sep" "nav" "book" "fine";gap:0}
  .f2-brand{padding-bottom:20px}
  .f2-logo img{width:190px}
