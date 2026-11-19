@@ -1198,3 +1198,32 @@ header.site .logo img{height:60px}
 .contact-hero .map-link:hover{border-color:var(--deep);background:var(--paper)}
 .contact-hero .map-link svg{color:var(--green);flex:none}
 @media (min-width:1100px) and (hover:hover) and (pointer:fine){.contact-hero .card:not(:has(.partner)) h3{margin-top:0}}
+/* v26: αρχική, «Ίσως το έχετε πει κι εσείς»: η φωτογραφία μένει σταθερή όταν ανοίγει μια φράση */
+@media (min-width:701px){
+ .intro .split{align-items:start}
+ .intro .split > .portrait{position:sticky;top:110px}
+}
+/* v27: αναζήτηση και θέματα στη σελίδα Άρθρα */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.asearch{margin:6px auto 0;text-align:center}
+.as-box{max-width:760px;margin:0 auto}
+.as-box{display:flex;align-items:center;gap:10px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:0 8px 0 18px;color:var(--muted);transition:border-color .2s,box-shadow .2s}
+.as-box:focus-within{border-color:var(--green);box-shadow:0 0 0 3px rgba(79,107,88,.15)}
+.as-box input{flex:1;min-width:0;border:0;outline:0;background:transparent;font:inherit;font-size:1rem;color:var(--ink);padding:14px 0}
+.as-box input::-webkit-search-cancel-button{display:none}
+.as-clear{border:0;background:transparent;font-size:1.5rem;line-height:1;color:var(--muted);cursor:pointer;width:38px;height:38px;border-radius:50%}
+.as-clear:hover{background:var(--bg)}
+.as-chips{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin-top:16px}
+.as-chips button{font:inherit;font-size:.86rem;padding:8px 15px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--deep);cursor:pointer;transition:background .2s,border-color .2s,color .2s}
+.as-chips button:hover{border-color:var(--deep)}
+.as-chips button.on{background:var(--deep);border-color:var(--deep);color:#fff}
+.as-count{font-size:.86rem;min-height:1.3em;margin:14px 0 0}
+.all-posts{margin-top:18px}
+.pcard[hidden]{display:none!important}
+.as-empty{text-align:center;padding:30px 0 10px;color:var(--muted)}
+@media (max-width:700px){
+ .as-chips{flex-wrap:nowrap;justify-content:flex-start;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin-left:-22px;margin-right:-22px;padding:0 22px 4px}
+ .as-chips::-webkit-scrollbar{display:none}
+ .as-chips button{flex:none}
+ .asearch{text-align:left}
+}

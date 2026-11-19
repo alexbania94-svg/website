@@ -109,6 +109,7 @@ URL: https://alexandrabania.com/diavitis-typou-2-diatrofi.html
 - Saldarriaga-Callejas LM et al. Nutrient intake order on metabolic outcomes in type 2 diabetes: a systematic review and meta-analysis. Acta Diabetol, 2025. https://doi.org/10.1007/s00592-025-02586-0
 - Κανονισμός (ΕΚ) αριθ. 1924/2006 για τους ισχυρισμούς διατροφής και υγείας που διατυπώνονται για τα τρόφιμα. https://eur-lex.europa.eu/eli/reg/2006/1924/oj
 - Κανονισμός (ΕΕ) αριθ. 1169/2011 σχετικά με την παροχή πληροφοριών για τα τρόφιμα στους καταναλωτές. https://eur-lex.europa.eu/eli/reg/2011/1169/oj
+- Anderson BO et al. Health and cancer risks associated with low levels of alcohol consumption. The Lancet Public Health, 2023. https://doi.org/10.1016/S2468-2667(22)00317-6
 
 ---
 
@@ -390,7 +391,7 @@ URL: https://alexandrabania.com/prodiavitis-diatrofi.html
 - Knowler WC et al. (Diabetes Prevention Program Research Group). Reduction in the incidence of type 2 diabetes with lifestyle intervention or metformin. N Engl J Med, 2002. https://doi.org/10.1056/NEJMoa012512
 - Tuomilehto J et al. Prevention of type 2 diabetes mellitus by changes in lifestyle among subjects with impaired glucose tolerance. N Engl J Med, 2001. https://doi.org/10.1056/NEJM200105033441801
 - Diabetes Prevention Program Research Group. Long-term effects of lifestyle intervention or metformin on diabetes development and microvascular complications over 15-year follow-up: the Diabetes Prevention Program Outcomes Study. Lancet Diabetes Endocrinol, 2015. https://doi.org/10.1016/S2213-8587(15)00291-0
-- Salas-Salvadó J et al. Prevention of diabetes with Mediterranean diets: a subgroup analysis of a randomized trial. Ann Intern Med, 2014. https://doi.org/10.7326/M13-1725
+- Salas-Salvadó J et al. Prevention of diabetes with Mediterranean diets: a subgroup analysis of a randomized trial. Ann Intern Med, 2014. https://doi.org/10.7326/M13-1725 Βλ. και διόρθωση: Ann Intern Med, 2018. https://doi.org/10.7326/L18-0363
 
 ---
 
@@ -488,6 +489,7 @@ URL: https://alexandrabania.com/giortes-xoris-enoxes.html
 - Mason et al. Effectiveness of a brief behavioural intervention to prevent weight gain over the Christmas holiday period: randomised controlled trial. BMJ, 2018. https://doi.org/10.1136/bmj.k4867
 - Abdulan et al. Winter Holidays and Their Impact on Eating Behavior—A Systematic Review. Nutrients, 2023. https://doi.org/10.3390/nu15194201
 - Feliu et al. European Code Against Cancer, 5th edition – tobacco and nicotine containing products, second-hand smoke, alcohol and cancer. Molecular Oncology, 2026. https://doi.org/10.1002/1878-0261.70177
+- Westenhoefer J, Stunkard AJ, Pudel V. Validation of the flexible and rigid control dimensions of dietary restraint. International Journal of Eating Disorders, 1999. https://doi.org/10.1002/(SICI)1098-108X(199907)26:1<53::AID-EAT7>3.0.CO;2-N
 
 ---
 
@@ -707,7 +709,7 @@ URL: https://alexandrabania.com/zygaria-systasi-somatos.html
 
 Η συσκευή δεν βλέπει μέσα στο σώμα. Μετράει πόσο δυσκολεύεται το ρεύμα να περάσει. Από αυτό, μαζί με το ύψος, την ηλικία, το φύλο και το βάρος σας, εκτιμά με εξισώσεις του κατασκευαστή το λίπος, την άλιπη μάζα και το νερό του σώματος. Γι' αυτό όλες οι τιμές του φύλλου είναι εκτιμήσεις και όχι ζύγισμα κάθε ιστού χωριστά.
 
-Η μέτρηση επηρεάζεται από το νερό που ήπιατε, το φαγητό, την άσκηση, τη στάση του σώματος και τον κύκλο στις γυναίκες. Είναι λιγότερο ακριβής όταν το λίπος είναι πολύ ή όταν το σώμα κρατάει υγρά. Όταν όμως επαναλαμβάνεται με την ίδια συσκευή και τις ίδιες συνθήκες, δίνει πολύ σταθερά αποτελέσματα. Γι' αυτό τη χρησιμοποιούμε κυρίως για να συγκρίνουμε τις δικές σας μετρήσεις μεταξύ τους, από ραντεβού σε ραντεβού. Αν κάποια στιγμή μετρηθείτε σε άλλη συσκευή, η διαφορά μπορεί να οφείλεται στις διαφορετικές εξισώσεις και όχι σε αλλαγή του σώματός σας.
+Η μέτρηση επηρεάζεται από το νερό που ήπιατε, το φαγητό, την άσκηση, τη στάση του σώματος και τον κύκλο στις γυναίκες. Είναι λιγότερο ακριβής όταν το λίπος είναι πολύ ή όταν το σώμα κρατάει υγρά. Όταν όμως επαναλαμβάνεται με την ίδια συσκευή και τις ίδιες συνθήκες, δίνει σταθερά αποτελέσματα, όταν το βάρος δεν είναι πολύ αυξημένο και το σώμα δεν κρατάει υγρά. Γι' αυτό τη χρησιμοποιούμε κυρίως για να συγκρίνουμε τις δικές σας μετρήσεις μεταξύ τους, από ραντεβού σε ραντεβού. Αν κάποια στιγμή μετρηθείτε σε άλλη συσκευή, η διαφορά μπορεί να οφείλεται στις διαφορετικές εξισώσεις και όχι σε αλλαγή του σώματός σας.
 
 ## Τι σημαίνει κάθε τιμή
 
@@ -919,7 +921,7 @@ URL: https://alexandrabania.com/nisteia-xoris-steriseis.html
 
 Ενδεικτικό παράδειγμα. Οι ποσότητες εξαρτώνται από την ηλικία, το βάρος, την κίνηση και τον στόχο σας.
 
-Αν έχετε χρόνια νεφρική νόσο, το κάλιο, ο φώσφορος, το αλάτι, η πρωτεΐνη και τα υγρά ορίζονται ανάλογα με το στάδιο και τις εξετάσεις σας, μαζί με τον νεφρολόγο σας. Αν έχετε διαβήτη και αλλάξουν οι ώρες ή οι ποσότητες των γευμάτων σας, μιλήστε πρώτα με τον ιατρό σας, γιατί μπορεί να χρειαστεί να αλλάξει η αγωγή. Αν είστε έγκυος ή θηλάζετε, χρειάζεστε εξατομικευμένη καθοδήγηση από τον μαιευτήρα σας και διαιτολόγο, για B12, σίδηρο, φυλλικό οξύ, ασβέστιο, ιώδιο, ψευδάργυρο και DHA. Τους κανόνες της νηστείας ο καθένας τους τηρεί με τον δικό του τρόπο· εδώ μιλάμε μόνο για όσα χρειάζεται ο οργανισμός.
+Αν έχετε χρόνια νεφρική νόσο, το κάλιο, ο φώσφορος, το αλάτι, η πρωτεΐνη και τα υγρά ορίζονται ανάλογα με το στάδιο και τις εξετάσεις σας, μαζί με τον νεφρολόγο σας. Αν έχετε διαβήτη και αλλάξουν οι ώρες ή οι ποσότητες των γευμάτων σας, μιλήστε πρώτα με τον ιατρό σας, γιατί μπορεί να χρειαστεί να αλλάξει η αγωγή. Αν είστε έγκυος, θηλάζετε ή σχεδιάζετε εγκυμοσύνη, χρειάζεστε εξατομικευμένη καθοδήγηση από τον μαιευτήρα σας και διαιτολόγο, για B12, σίδηρο, φυλλικό οξύ, ασβέστιο, ιώδιο, ψευδάργυρο και DHA. Τους κανόνες της νηστείας ο καθένας τους τηρεί με τον δικό του τρόπο· εδώ μιλάμε μόνο για όσα χρειάζεται ο οργανισμός.
 
 ## Πηγές
 
@@ -1042,7 +1044,7 @@ URL: https://alexandrabania.com/thyreoeidis-diatrofi.html
 
 Το πολύ ιώδιο δεν βοηθάει, και στη Hashimoto μπορεί και να βλάψει. Γι' αυτό συμπληρώματα με ιώδιο, φύκια ή σκόνες «για τον θυρεοειδή» δεν τα παίρνετε αν δεν σας το πει ο ιατρός σας.
 
-Ούτε το σελήνιο συστήνεται ως συμπλήρωμα ρουτίνας σε όλους όσοι έχουν Hashimoto. Μπορεί να ρίξει κάποιους δείκτες στις εξετάσεις, αλλά αυτό δεν σημαίνει ότι βελτιώνει τα συμπτώματα ή ότι γυρίζει πίσω τη νόσο. Χρειάζεται συγκεκριμένος λόγος και καθοδήγηση από επαγγελματία υγείας.
+Ούτε το σελήνιο συστήνεται ως συμπλήρωμα ρουτίνας σε όλους όσοι έχουν Hashimoto. Μπορεί να ρίξει κάποιους δείκτες στις εξετάσεις, όπως τα αντισώματα και σε κάποιους την TSH, αλλά αυτό δεν σημαίνει ότι βελτιώνει τα συμπτώματα ή ότι γυρίζει πίσω τη νόσο. Χρειάζεται συγκεκριμένος λόγος και καθοδήγηση από επαγγελματία υγείας.
 
 ## Και το βάρος;
 
