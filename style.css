@@ -1,6 +1,6 @@
 :root{
   --bg:#F4EFE7;--paper:#FBF8F2;--ink:#2B2A26;--deep:#1F3328;--green:#4F6E5F;--sage:#8BA08F;--sage-l:#DDE5DC;
-  --blue:#A9C1DC;--tan:#C9B59B;--line:#DED5C6;--muted:#6B665C;
+  --blue:#A9C1DC;--tan:#C9B59B;--gold:#C9AF8E;--line:#DED5C6;--muted:#6B665C;
   --serif:"EB Garamond",Georgia,serif;--sans:Manrope,system-ui,-apple-system,"Segoe UI",sans-serif;
 }
 *{box-sizing:border-box}
@@ -25,7 +25,7 @@ header.site .wrap{display:flex;align-items:center;justify-content:space-between;
 nav.main{display:flex;align-items:center;gap:22px}
 nav.main a{text-decoration:none;color:var(--deep);font-size:.93rem}
 nav.main a.btn{color:#fff}
-nav.main a[aria-current]{box-shadow:inset 0 -2px 0 var(--sage)}
+nav.main a[aria-current]{box-shadow:inset 0 -2px 0 var(--gold)}
 .btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;background:var(--deep);color:#fff;text-decoration:none;font-weight:600;font-size:.95rem;border:1.5px solid var(--deep);transition:background .2s}
 .btn:hover{background:var(--green);border-color:var(--green)}
 .btn.ghost{background:transparent;color:var(--deep)}
@@ -76,7 +76,7 @@ section.block{padding:84px 0}
 .service p{margin:0;font-size:.95rem}
 .steps{list-style:none;padding:0;margin:26px 0 0;counter-reset:s;display:grid;gap:14px}
 .steps li{counter-increment:s;display:flex;gap:14px;align-items:flex-start}
-.steps li::before{content:counter(s);flex:none;width:34px;height:34px;border-radius:50%;background:var(--deep);color:#fff;display:grid;place-items:center;font-family:var(--serif);font-size:1.1rem}
+.steps li::before{content:counter(s);flex:none;width:34px;height:34px;border-radius:50%;background:var(--gold);color:var(--deep);display:grid;place-items:center;font-family:var(--serif);font-size:1.1rem}
 .steps strong{color:var(--deep)}
 
 /* quote band */
@@ -348,7 +348,7 @@ header.site.scrolled{box-shadow:0 6px 18px -12px rgba(31,51,40,.35)}
 .opt-body li{margin-bottom:.4em}
 .opt-body .mods{list-style:none;padding:0;display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}
 .opt-body .mods li{background:var(--sage-l);color:var(--deep);border-radius:999px;padding:5px 14px;font-size:.88rem;margin:0}
-.band .steps li::before{background:#fff;color:var(--deep)}
+.band .steps li::before{background:var(--gold);color:var(--deep)}
 .band .steps li{color:#EDF1EC}
 @media (max-width:860px){.choose{grid-template-columns:1fr}}
 /* Υπηρεσίες: μεγαλύτερο κείμενο */
@@ -1072,7 +1072,7 @@ header.site .logo img{height:60px}
  nav.main{align-items:stretch!important;text-align:right!important;padding:6px 22px 20px!important;gap:0!important;box-shadow:0 18px 30px -20px rgba(31,51,40,.35)}
  nav.main a:not(.btn){display:block;font-size:1.08rem!important;padding:14px 4px;border-bottom:1px solid var(--line);color:var(--deep)}
  nav.main a[aria-current]{box-shadow:none;font-weight:600;color:var(--green)}
- nav.main a[aria-current]::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--green);margin:0 10px 2px 0;vertical-align:middle}
+ nav.main a[aria-current]::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--gold);margin:0 10px 2px 0;vertical-align:middle}
  nav.main a.btn{margin-top:18px;display:flex;justify-content:center;padding:13px;font-size:1rem}
  .nav-contact{display:flex;flex-direction:column;align-items:flex-end;gap:4px;margin-top:16px;font-size:.88rem;color:var(--muted,#6b6b6b)}
  .nav-contact a{color:var(--deep);border:0!important;padding:0!important;font-size:.88rem!important;display:inline!important}
@@ -1284,7 +1284,7 @@ body.ss-open{overflow:hidden}
  .nav-contact{align-items:flex-start}
 }
 .hs-label{display:none}
-@media(min-width:1200px){
+@media(min-width:1360px){
  .head-search{width:auto;height:40px;padding:0 18px 0 13px;gap:9px;border-radius:999px;justify-content:flex-start;min-width:150px;background:#fff;color:var(--muted);font:400 .9rem var(--sans);margin-left:10px}
  .head-search svg{color:var(--green)}
  .hs-label{display:inline}
@@ -1317,3 +1317,36 @@ body.ss-open{overflow:hidden}
 }
 .menu-toggle{white-space:nowrap}
 @media(max-width:350px){.logo img{width:132px;height:auto}.head-search{width:34px;height:34px;margin-right:6px}.menu-toggle{min-width:0;padding:7px 11px}}
+
+/* Υπηρεσίες: κουίζ σε πράσινο (Νοέ 2026) */
+#quiz-sec{background:var(--deep);padding:64px 0;color:#EDF1EC}
+#quiz-sec .eyebrow{color:#D9C4A6}
+#quiz-sec .quiz-start{color:#EDF1EC;font-size:1.08rem}
+#quiz-sec .linkbtn{color:#fff;text-decoration-color:var(--gold);text-decoration-thickness:2px}
+#quiz-sec .linkbtn:hover{color:#EADBC4}
+#quiz-sec .quiz-box,#quiz-sec .quiz-res{background:#fff;border-color:transparent;color:var(--ink);box-shadow:0 14px 34px rgba(0,0,0,.18)}
+#quiz-sec .quiz-bar span{background:var(--gold)}
+@media (max-width:700px){#quiz-sec{padding:46px 0}}
+
+/* Online (Νοέ 2026) */
+.band .tip{margin-top:20px;padding:14px 18px;border-left:3px solid var(--gold);background:rgba(255,255,255,.05);border-radius:0 12px 12px 0;color:#EDF1EC}
+.endo-box{display:flex;align-items:center;gap:22px;max-width:860px;margin:0 auto;background:#fff;border:1px solid var(--line);border-left:4px solid var(--gold);border-radius:16px;padding:18px 22px}
+.endo-box img{flex:none;width:110px;height:auto}
+.endo-box p{margin:0}
+@media (max-width:640px){.endo-box{flex-direction:column;align-items:flex-start;gap:12px}}
+/* Ένα «Κλείστε ραντεβού» τη φορά (Νοέ 2026): στην Αρχική το κουμπί επάνω εμφανίζεται μετά το πρώτο μέρος και σπρώχνει απαλά το μενού αριστερά */
+body.menu-open .head-cta{display:none!important}
+body.contact-page .head-cta{display:none!important}
+.head-cta{max-width:240px;overflow:hidden;white-space:nowrap;transition:max-width .45s ease,padding .45s ease,margin .45s ease,opacity .3s ease,border-width .45s ease}
+body.cta-on .head-cta{max-width:0;padding-left:0!important;padding-right:0!important;margin-left:-12px;margin-right:0;border-width:0;opacity:0;pointer-events:none}
+@media (min-width:901px){
+ nav.main>a.btn{max-width:240px;overflow:hidden;white-space:nowrap;transition:max-width .45s ease,padding .45s ease,margin .45s ease,opacity .3s ease,border-width .45s ease}
+ body.cta-on nav.main>a.btn{max-width:0;padding-left:0;padding-right:0;margin-left:-22px;margin-right:0;border-width:0;opacity:0;pointer-events:none}
+ body.contact-page nav.main>a.btn{display:none}
+}
+@media (max-width:1040px) and (min-width:901px){body.cta-on nav.main>a.btn{margin-left:-14px}}
+.dl-card{display:flex;align-items:center;justify-content:space-between;gap:28px;max-width:960px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px 34px}
+.dl-card h2{margin:0 0 8px}
+.dl-card p:last-child{margin-bottom:0}
+.dl-act{flex:none}
+@media (max-width:700px){.dl-card{flex-direction:column;align-items:flex-start;padding:24px 22px}}

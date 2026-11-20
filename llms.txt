@@ -11,7 +11,8 @@
 ## Σελίδες
 - [Αρχική](https://alexandrabania.com/): υπηρεσίες, τοποθεσία, σύνοψη
 - [Σχετικά](https://alexandrabania.com/sxetika.html): σπουδές, κλινική εμπειρία (Γ.Ν. Σητείας, EndoCare), συνεχιζόμενη εκπαίδευση
-- [Υπηρεσίες](https://alexandrabania.com/ypiresies.html): πρώτη συνάντηση, εξατομικευμένο διαιτολόγιο, διατροφική συμβουλευτική, online συνεδρίες, μέτρηση σύστασης σώματος
+- [Υπηρεσίες](https://alexandrabania.com/ypiresies.html): πρώτη συνάντηση, εξατομικευμένο διαιτολόγιο, διατροφική συμβουλευτική, μέτρηση σύστασης σώματος
+- [Online συνεδρίες](https://alexandrabania.com/online.html): online συνεδρίες για όσους δεν μένουν κοντά στη Σητεία (ραντεβού με email), πώς γίνονται, πώς μετράτε την περίμετρο της μέσης. Όσοι μένουν στη Σητεία κλείνουν ραντεβού στο ιατρείο EndoCare (2843 025177)
 - [Θέματα υγείας](https://alexandrabania.com/pathiseis.html): διατροφική θεραπεία ανά πάθηση
 - [Άρθρα](https://alexandrabania.com/arthra.html): άρθρα για ασθενείς
 - [Επικοινωνία](https://alexandrabania.com/epikoinonia.html): ραντεβού στη Σητεία και online, συχνές ερωτήσεις

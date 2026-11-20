@@ -99,3 +99,17 @@
   function openTarget(h){if(!h)return;var t;try{t=document.querySelector(decodeURIComponent(h))}catch(e){return}if(!t)return;var d=t.tagName==='DETAILS'?t:t.closest('details');if(d)d.open=true;var y=t.getBoundingClientRect().top+scrollY-((document.querySelector('header.site')||{}).offsetHeight||0)-14;scrollTo({top:y,behavior:'smooth'})}
   if(location.hash)window.addEventListener('load',function(){var t;try{t=document.querySelector(decodeURIComponent(location.hash))}catch(e){}if(t&&(t.tagName==='DETAILS'||t.closest('details')))openTarget(location.hash)});
 })();
+
+/* Ένα «Κλείστε ραντεβού» τη φορά: το κουμπί της κεφαλίδας κρύβεται όσο φαίνεται άλλο κουμπί ραντεβού στην οθόνη (Νοέ 2026) */
+(function(){
+  if(!('IntersectionObserver' in window))return;
+  var els=document.querySelectorAll('main a.btn[href*="epikoinonia"], main a.btn[href^="mailto:"], main a.btn[href^="tel:"], main .contact-cards');
+  if(!els.length)return;
+  var seen=new Set(),b=document.body;
+  b.classList.add('cta-on');
+  var io=new IntersectionObserver(function(es){
+    es.forEach(function(e){if(e.isIntersecting)seen.add(e.target);else seen.delete(e.target)});
+    b.classList.toggle('cta-on',seen.size>0);
+  },{threshold:0});
+  els.forEach(function(el){io.observe(el)});
+})();
