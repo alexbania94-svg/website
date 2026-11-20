@@ -1406,5 +1406,6 @@ a[href^="tel:"]{white-space:nowrap}
 /* tablet: το κουμπί εμφανίζεται/κρύβεται χωρίς σβήσιμο, για να μη «σπάει» στο Safari του iPad */
 @media (max-width:900px){html.cta-ready .head-cta{transition:none}}
 /* Αρχική: μικρή γραμμή για online κάτω από τα κουμπιά (Νοέ 2026) */
-.hero-ph .online-line{margin:18px 0 0;font-size:.9rem}
-.hero-ph .online-line a{color:var(--deep);text-underline-offset:3px}
+.hero-ph .sub strong{font-weight:600;color:var(--deep)}
+.hero-ph .online-line{margin:16px 0 0;font-size:.84rem;color:var(--muted)}
+.hero-ph .online-line a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
