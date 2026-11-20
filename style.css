@@ -1350,3 +1350,4 @@ body.cta-on .head-cta{max-width:0;padding-left:0!important;padding-right:0!impor
 .dl-card p:last-child{margin-bottom:0}
 .dl-act{flex:none}
 @media (max-width:700px){.dl-card{flex-direction:column;align-items:flex-start;padding:24px 22px}}
+.c-doc{margin:-4px auto 14px;font-size:.88rem;line-height:1.45;color:var(--muted,#6b6b6b);max-width:30ch}
