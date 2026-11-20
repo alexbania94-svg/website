@@ -1364,7 +1364,7 @@ html.cta-ready .head-cta{transition:opacity .35s ease,visibility .35s}
 }
 @media (min-width:701px) and (max-width:860px){.contact-hero .contact-cards .big-mail{font-size:.86rem;padding-left:10px;padding-right:10px;white-space:nowrap;overflow-wrap:normal}}
 #perimetros-mesis h2{margin-bottom:14px}
-.price-note{line-height:1.6}
+.price-note{line-height:1.55;font-size:.85rem}
 a[href^="tel:"]{white-space:nowrap}
 /* Μενού πάντα στο κέντρο σε υπολογιστή (Νοέ 2026): λογότυπο αριστερά, μενού στο κέντρο, αναζήτηση και «Κλείστε ραντεβού» δεξιά. Το κουμπί σβήνει μόνο με διαφάνεια, άρα το μενού δεν μετακινείται ποτέ */
 .head-right{display:flex;align-items:center}
@@ -1405,3 +1405,6 @@ a[href^="tel:"]{white-space:nowrap}
 @media (min-width:1101px) and (max-width:1180px){header.site .logo img{height:54px}}
 /* tablet: το κουμπί εμφανίζεται/κρύβεται χωρίς σβήσιμο, για να μη «σπάει» στο Safari του iPad */
 @media (max-width:900px){html.cta-ready .head-cta{transition:none}}
+/* Αρχική: μικρή γραμμή για online κάτω από τα κουμπιά (Νοέ 2026) */
+.hero-ph .online-line{margin:18px 0 0;font-size:.9rem}
+.hero-ph .online-line a{color:var(--deep);text-underline-offset:3px}
