@@ -102,14 +102,16 @@
 
 /* Ένα «Κλείστε ραντεβού» τη φορά: το κουμπί της κεφαλίδας κρύβεται όσο φαίνεται άλλο κουμπί ραντεβού στην οθόνη (Νοέ 2026) */
 (function(){
-  if(!('IntersectionObserver' in window))return;
+  if(!('IntersectionObserver' in window)){document.documentElement.classList.remove('cta-on');return}
   var els=document.querySelectorAll('main a.btn[href*="epikoinonia"], main a.btn[href^="mailto:"], main a.btn[href^="tel:"], main .contact-cards');
-  if(!els.length)return;
-  var seen=new Set(),b=document.body;
+  if(!els.length){document.documentElement.classList.remove('cta-on');return}
+  var seen=new Set(),b=document.documentElement;
   b.classList.add('cta-on');
   var io=new IntersectionObserver(function(es){
     es.forEach(function(e){if(e.isIntersecting)seen.add(e.target);else seen.delete(e.target)});
     b.classList.toggle('cta-on',seen.size>0);
   },{threshold:0});
   els.forEach(function(el){io.observe(el)});
+  /* τα εφέ ενεργοποιούνται μόνο αφού οριστεί η αρχική κατάσταση, ώστε να μην «κλωτσάει» στο άνοιγμα της σελίδας */
+  setTimeout(function(){requestAnimationFrame(function(){b.classList.add('cta-ready')})},400);
 })();

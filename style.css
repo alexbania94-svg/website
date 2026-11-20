@@ -1334,17 +1334,16 @@ body.ss-open{overflow:hidden}
 .endo-box img{flex:none;width:110px;height:auto}
 .endo-box p{margin:0}
 @media (max-width:640px){.endo-box{flex-direction:column;align-items:flex-start;gap:12px}}
-/* Ένα «Κλείστε ραντεβού» τη φορά (Νοέ 2026): στην Αρχική το κουμπί επάνω εμφανίζεται μετά το πρώτο μέρος και σπρώχνει απαλά το μενού αριστερά */
+/* Ένα «Κλείστε ραντεβού» τη φορά (Νοέ 2026): το κουμπί επάνω σβήνει/εμφανίζεται μόνο με διαφάνεια, κρατάει τη θέση του ώστε το μενού να μη μετακινείται */
 body.menu-open .head-cta{display:none!important}
 body.contact-page .head-cta{display:none!important}
-.head-cta{max-width:240px;overflow:hidden;white-space:nowrap;transition:max-width .45s ease,padding .45s ease,margin .45s ease,opacity .3s ease,border-width .45s ease}
-body.cta-on .head-cta{max-width:0;padding-left:0!important;padding-right:0!important;margin-left:-12px;margin-right:0;border-width:0;opacity:0;pointer-events:none}
+html.cta-on .head-cta{opacity:0;visibility:hidden;pointer-events:none}
+html.cta-ready .head-cta{transition:opacity .35s ease,visibility .35s}
 @media (min-width:901px){
- nav.main>a.btn{max-width:240px;overflow:hidden;white-space:nowrap;transition:max-width .45s ease,padding .45s ease,margin .45s ease,opacity .3s ease,border-width .45s ease}
- body.cta-on nav.main>a.btn{max-width:0;padding-left:0;padding-right:0;margin-left:-22px;margin-right:0;border-width:0;opacity:0;pointer-events:none}
+ html.cta-on nav.main>a.btn{opacity:0;visibility:hidden;pointer-events:none}
+ html.cta-ready nav.main>a.btn{transition:opacity .35s ease,visibility .35s}
  body.contact-page nav.main>a.btn{display:none}
 }
-@media (max-width:1040px) and (min-width:901px){body.cta-on nav.main>a.btn{margin-left:-14px}}
 .dl-card{display:flex;align-items:center;justify-content:space-between;gap:28px;max-width:960px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:22px;padding:30px 34px}
 .dl-card h2{margin:0 0 8px}
 .dl-card p:last-child{margin-bottom:0}
