@@ -1412,3 +1412,5 @@ a[href^="tel:"]{white-space:nowrap}
 /* Θέματα υγείας: «Θέλετε να το δούμε μαζί; Κλείστε ραντεβού →» σε μία γραμμή στο κινητό (Νοέ 2026) */
 @media (max-width:760px){.cond-section .prose p.cond-cta,p.cond-cta{white-space:nowrap;font-size:min(1.0625rem,calc((100vw - 48px) / 22.3))}}
 @media (max-width:349px){.cond-section .prose p.cond-cta,p.cond-cta{white-space:normal;font-size:.95rem}}
+/* Νομικές σελίδες: χωρίς κουμπί ραντεβού (Νοέ 2026) */
+body.legal-page .head-cta,body.legal-page nav.main>a.btn,body.legal-page .sticky-cta{display:none!important}
