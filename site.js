@@ -115,3 +115,7 @@
   /* τα εφέ ενεργοποιούνται μόνο αφού οριστεί η αρχική κατάσταση, ώστε να μην «κλωτσάει» στο άνοιγμα της σελίδας */
   setTimeout(function(){requestAnimationFrame(function(){b.classList.add('cta-ready')})},400);
 })();
+/* ύψος κεφαλίδας για το μενού σε όλη την οθόνη (24/11/2026) */
+(function(){var h=document.querySelector('header.site');if(!h)return;function s(){document.documentElement.style.setProperty('--hh',h.getBoundingClientRect().height+'px')}s();addEventListener('resize',s);addEventListener('scroll',s,{passive:true});var t=document.querySelector('.menu-toggle');if(t)t.addEventListener('click',s)})();
+/* μενού: άνοιγμα λίστας θεμάτων στο κινητό (24/11/2026) */
+(function(){document.querySelectorAll('.dd-tog').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();var p=b.parentNode,o=p.classList.toggle('open');b.setAttribute('aria-expanded',o);b.textContent=o?'−':'+'})})})();

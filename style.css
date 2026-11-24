@@ -1414,3 +1414,175 @@ a[href^="tel:"]{white-space:nowrap}
 @media (max-width:349px){.cond-section .prose p.cond-cta,p.cond-cta{white-space:normal;font-size:.95rem}}
 /* Νομικές σελίδες: χωρίς κουμπί ραντεβού (Νοέ 2026) */
 body.legal-page .head-cta,body.legal-page nav.main>a.btn,body.legal-page .sticky-cta{display:none!important}
+
+/* Επικοινωνία: κάρτα ιατρείου (24/11/2026) */
+.ct-hero{padding:56px 0 48px}
+.ct-hero h1{font-size:clamp(2.2rem,5vw,3.6rem)}
+.ct-hero .lead{margin-top:16px}
+.ct-card{display:grid;grid-template-columns:1.25fr 1fr;margin-top:36px;background:var(--paper);border:1px solid var(--line);border-radius:24px;overflow:hidden}
+.ct-info{padding:48px 52px}
+.ct-info p{margin:0}
+.ct-kicker{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--green);font-weight:600}
+.ct-logo{margin:18px 0 16px!important;line-height:0}
+.ct-logo img{height:34px;width:auto}
+.ct-who{color:var(--ink);line-height:1.5;max-width:36ch}
+.ct-tel{margin:22px 0 22px!important}
+.ct-tel a{font-family:var(--serif);font-size:clamp(2.2rem,4.4vw,3.2rem);line-height:1;color:var(--deep);text-decoration:none}
+.ct-tel a:hover{text-decoration:underline;text-underline-offset:6px}
+.ct-addr{margin-top:22px!important;color:var(--muted);font-size:.95rem}
+.ct-map{margin-top:10px!important}
+.ct-map a,.ct-more a{color:var(--green);font-weight:600;text-decoration:underline;text-underline-offset:4px}
+.ct-photo{position:relative;min-height:420px}
+.ct-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%}
+.ct-online{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;margin-top:44px;padding-top:36px;border-top:1px solid var(--line)}
+.ct-online h2{font-size:clamp(1.6rem,3vw,2.1rem);margin:0 0 10px}
+.ct-online p{margin:0;max-width:62ch}
+.ct-online .eyebrow{margin-bottom:10px}
+.ct-more{white-space:nowrap}
+@media (max-width:760px){
+ .ct-hero{padding:30px 0 32px}
+ .ct-card{grid-template-columns:1fr}
+ .ct-photo{order:-1;min-height:0;aspect-ratio:4/3}
+ .ct-info{padding:28px 22px 30px}
+ .ct-online{flex-direction:column;align-items:flex-start;margin-top:32px;padding-top:28px}
+}
+@media (min-width:761px) and (max-width:1024px){.ct-info{padding:36px 32px}}
+@media (orientation:landscape) and (max-height:500px){.ct-hero{padding:24px 0 28px}.ct-photo{min-height:320px}}
+
+/* Αρχική: Γνωρίστε τη διαιτολόγο + online (24/11/2026) */
+.meet{padding-bottom:0}
+.meet-row{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start;padding-bottom:44px;border-bottom:1px solid var(--line)}
+.meet-row h2{font-size:clamp(2rem,4.2vw,3.2rem)}
+.meet-row .lead{margin:0 0 14px;max-width:none}
+.meet-row p{margin:0 0 12px}
+.meet-more a{color:var(--green);font-weight:600;text-decoration:underline;text-underline-offset:4px}
+.home-online{padding:40px 0}
+.home-online .ct-online{margin-top:0;padding-top:0;border-top:0}
+@media (max-width:760px){.meet-row{grid-template-columns:1fr;gap:10px;padding-bottom:28px}.home-online{padding:28px 0}}
+
+/* Σχετικά: μονό τελευταίο κουτί σε όλο το πλάτος (24/11/2026) */
+@media (min-width:761px){.how-cards .service:last-child:nth-child(odd){grid-column:1/-1}}
+
+/* Αρχική: κάρτα online (24/11/2026) */
+.home-online{padding:56px 0}
+.ho-card{display:grid;grid-template-columns:340px 1fr;align-items:stretch;background:var(--paper);border:1px solid var(--line);border-radius:24px;overflow:hidden}
+.ho-img{position:relative;min-height:240px}
+.ho-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.ho-txt{padding:40px 48px;display:flex;flex-direction:column;justify-content:center;align-items:flex-start}
+.ho-txt .eyebrow{margin-bottom:10px}
+.ho-txt h2{font-size:clamp(1.7rem,3vw,2.3rem);margin:0 0 12px}
+.ho-txt p{margin:0 0 22px;max-width:52ch}
+@media (max-width:760px){.home-online{padding:32px 0}.ho-card{grid-template-columns:1fr}.ho-img{min-height:0;aspect-ratio:16/9}.ho-txt{padding:26px 22px 28px}}
+@media (min-width:761px) and (max-width:1024px){.ho-card{grid-template-columns:260px 1fr}.ho-txt{padding:32px 30px}}
+/* Μενού κινητού/tablet: μόνο «Κλείστε ραντεβού», χωρίς τηλέφωνο και email (24/11/2026) */
+@media (max-width:900px){nav.main a.btn{display:flex!important;justify-content:center;margin-top:18px;padding:13px;font-size:1rem}}
+
+/* Μενού κινητού/tablet σε όλη την οθόνη: ένα μόνο «Κλείστε ραντεβού» ορατό (24/11/2026) */
+@media (max-width:900px){
+ body.menu-open{overflow:hidden}
+ body.menu-open::after{background:var(--bg)!important}
+ nav.main.open{height:calc(100vh - 100%);height:calc(100dvh - var(--hh,58px));overflow-y:auto;overscroll-behavior:contain;background:var(--bg)!important;box-shadow:none!important;border-bottom:0!important;padding-bottom:32px!important}
+ nav.main.open a.btn{margin-top:28px!important}
+ body.menu-open .sticky-cta,body.menu-open .to-top,body.menu-open .totop-rail{display:none!important}
+}
+/* Αρχική: λιγότερο κενό μετά την κάρτα online (24/11/2026) */
+section.block.home-online{padding:64px 0 0}
+section.home-online+section.block{padding-top:72px}
+@media (max-width:760px){section.block.home-online{padding:36px 0 0}section.home-online+section.block{padding-top:44px}}
+
+/* Θέματα υγείας: δύο ομάδες (24/11/2026) */
+.grp-head{padding-top:56px}
+.grp-head h2{font-size:clamp(1.9rem,4vw,2.6rem)}
+.grp-head .eyebrow{margin-bottom:8px}
+.grp-cta{padding:28px 22px 56px;border-top:1px solid var(--line)}
+.grp-cta a{color:var(--deep);font-weight:600;font-size:1.08rem;text-decoration:underline;text-underline-offset:4px}
+section.block.more-topics{padding-top:0}
+.more-topics .grp-head{margin-bottom:26px}
+.more-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.mcard{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:26px 26px 22px;scroll-margin-top:110px}
+.mcard h3{font-size:1.45rem;margin:0 0 10px}
+.mcard>p{margin:0 0 14px;font-size:.97rem;line-height:1.6;color:#3d3b35}
+.mlist{list-style:none;margin:0 0 6px;padding:0}
+.mlist li{position:relative;padding:5px 0 5px 22px;color:var(--deep);scroll-margin-top:110px}
+.mlist li::before{content:"›";position:absolute;left:4px;top:2px;color:var(--green);font-weight:700;font-size:1.15rem}
+.mcard .related{font-size:.88rem;margin:10px 0 0}
+@media (max-width:1024px){.more-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:640px){.more-grid{grid-template-columns:1fr}.grp-head{padding-top:36px}.grp-cta{padding:22px 22px 40px}.mcard{padding:22px 20px 18px}}
+
+/* Μενού: λίστα θεμάτων υγείας (24/11/2026) */
+.nav-dd{position:relative;display:flex;align-items:center}
+.dd-tog{display:none}
+.dd-panel{display:none}
+.dd-h{margin:0 0 6px;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--green);font-weight:600}
+@media (min-width:901px){
+ .dd-panel{position:absolute;top:100%;left:50%;transform:translateX(-50%);padding-top:16px;z-index:60}
+ .nav-dd:hover .dd-panel,.nav-dd:focus-within .dd-panel{display:block}
+ .dd-box{display:grid;grid-template-columns:auto auto;gap:6px 36px;background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:20px 24px;box-shadow:0 24px 50px -28px rgba(31,51,40,.45)}
+ .dd-col{display:flex;flex-direction:column}
+ nav.main .dd-panel a{display:block;padding:6px 0;font-size:.9rem!important;box-shadow:none!important;white-space:nowrap}
+ nav.main .dd-panel a:hover{color:var(--green)}
+}
+@media (max-width:900px){
+ .nav-dd{display:block}
+ .dd-tog{display:flex;align-items:center;justify-content:center;position:absolute;right:0;top:6px;width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:var(--paper);color:var(--deep);font-size:1.3rem;line-height:1;cursor:pointer}
+ .nav-dd.open .dd-panel{display:block;padding:10px 4px 14px;border-bottom:1px solid var(--line)}
+ .nav-dd.open .dd-col+.dd-col{margin-top:12px}
+ nav.main .dd-panel a{border:0!important;padding:7px 4px 7px 14px!important;font-size:1rem!important;display:block}
+}
+/* Αρχική: η γραμμή με το όνομα μπορεί να πάει σε δύο σειρές στο κινητό (24/11/2026) */
+@media (max-width:700px){.hero-ph .who{white-space:normal}}
+
+/* Άλλα θέματα υγείας: κάρτες με ετικέτες (24/11/2026) */
+.more-grid{align-items:stretch}
+.mcard{display:flex;flex-direction:column;padding:26px 26px 24px;background:#fff;border-color:var(--line);box-shadow:0 14px 30px -26px rgba(31,51,40,.5)}
+.mcard h3{font-size:1.4rem;margin:0 0 14px;padding-bottom:12px;border-bottom:1px solid var(--line)}
+.mtags{list-style:none;margin:0 0 16px;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.mtags li{background:var(--sage-l);color:var(--deep);border-radius:999px;padding:6px 13px;font-size:.88rem;line-height:1.3;scroll-margin-top:110px}
+.mtext{margin:0 0 16px;font-size:.92rem;line-height:1.6;color:var(--muted)}
+.mlink{margin-top:auto;align-self:flex-start;color:var(--green);font-weight:600;font-size:.92rem;text-decoration:underline;text-underline-offset:4px}
+.mlink:hover{color:var(--deep)}
+@media (max-width:640px){.mcard{padding:22px 20px 20px}.mtags li{font-size:.86rem}}
+/* Αρχική: το «+» στις φράσεις φαίνεται σαν κουμπί (24/11/2026) */
+.qx summary{cursor:pointer}
+.qx .qhint{gap:10px;margin-top:8px;font-size:.86rem;font-weight:600}
+.qx .qhint::after{width:30px;height:30px;font-size:1.15rem;font-weight:600;background:var(--deep);color:#fff;border:0;box-shadow:0 6px 14px -8px rgba(31,51,40,.6);transition:transform .3s,background .2s}
+.qx summary:hover .qhint::after{background:var(--green)}
+.qx summary:focus-visible .qhint::after{outline:2px solid var(--gold);outline-offset:2px}
+/* Επικοινωνία: κάρτα online όπως στην Αρχική (24/11/2026) */
+.ct-online-card{margin-top:28px}
+.ct-online-card .ho-txt h2{font-size:clamp(1.6rem,3vw,2.1rem)}
+.ct-online-card .ho-txt p{margin-bottom:12px}
+.ct-mail{font-family:var(--serif);font-size:1.25rem}
+.ct-mail a{color:var(--deep);text-decoration:none;overflow-wrap:anywhere}
+.ct-mail a:hover{text-decoration:underline;text-underline-offset:4px}
+.ho-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px;margin-top:8px}
+.ho-more{color:var(--green);font-weight:600;text-decoration:underline;text-underline-offset:4px}
+/* Επικοινωνία: ο αριθμός σκέτος, το κουμπί κλήσης μόνο σε κινητό/tablet (24/11/2026) */
+.ct-tel span{font-family:var(--serif);font-size:clamp(2.2rem,4.4vw,3.2rem);line-height:1;color:var(--deep);user-select:all}
+@media (hover:hover) and (pointer:fine){.ct-call{display:none}.ct-tel{margin-bottom:6px!important}}
+/* Επικοινωνία: online σε μικρή λωρίδα, το ιατρείο κυρίαρχο (24/11/2026) */
+@media (hover:hover) and (pointer:fine){.ct-call{display:block}}
+.ct-online-strip{display:flex;align-items:center;justify-content:space-between;gap:18px 28px;margin-top:22px;padding:18px 24px;border:1px solid var(--line);border-radius:16px;background:transparent}
+.ct-online-strip h2{font-family:var(--sans);font-size:.95rem;font-weight:600;color:var(--deep);margin:0 0 2px;letter-spacing:0}
+.ct-online-strip p{margin:0;font-size:.9rem;color:var(--muted);line-height:1.5}
+.ct-online-strip p a{color:var(--deep);overflow-wrap:anywhere}
+.cos-more{white-space:nowrap;color:var(--green);font-weight:600;font-size:.9rem;text-decoration:underline;text-underline-offset:4px}
+@media (max-width:760px){.ct-online-strip{flex-direction:column;align-items:flex-start;padding:16px 18px;gap:10px}}
+@media (hover:hover) and (pointer:fine){.ct-tel{margin-bottom:22px!important}}
+/* Επικοινωνία: λωρίδα online σε λευκό (24/11/2026) */
+.ct-online-strip{background:#fff;justify-content:flex-start;gap:16px 18px;padding:18px 22px;box-shadow:0 12px 28px -24px rgba(31,51,40,.45)}
+.cos-ic{flex:none;width:44px;height:44px;border-radius:50%;background:var(--sage-l);color:var(--deep);display:flex;align-items:center;justify-content:center}
+.cos-txt{flex:1;min-width:0}
+.cos-more{flex:none;text-decoration:none;border:1.5px solid var(--deep);color:var(--deep);border-radius:999px;padding:9px 18px;font-size:.88rem;transition:background .2s,color .2s}
+.cos-more:hover{background:var(--deep);color:#fff}
+@media (max-width:760px){.ct-online-strip{display:grid;grid-template-columns:44px 1fr;align-items:start}.cos-more{grid-column:1/-1;justify-self:start}}
+/* Επικοινωνία: φωτογραφία χωρίς κόψιμο στο tablet (24/11/2026) */
+@media (min-width:761px) and (max-width:1024px){
+ .ct-card{grid-template-columns:1fr 1fr;align-items:stretch}
+ .ct-photo{min-height:0;position:relative}
+ .ct-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 30%}
+ .ct-info{padding:32px 28px}
+}
+.ct-online-strip{background:var(--paper);box-shadow:none}
+/* Επικοινωνία: η φωτογραφία στο κινητό στις φυσικές της αναλογίες (24/11/2026) */
+@media (max-width:760px){.ct-photo{aspect-ratio:1/1}.ct-photo img{object-position:50% 50%}}
