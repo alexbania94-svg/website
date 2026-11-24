@@ -1586,3 +1586,5 @@ section.block.more-topics{padding-top:0}
 .ct-online-strip{background:var(--paper);box-shadow:none}
 /* Επικοινωνία: η φωτογραφία στο κινητό στις φυσικές της αναλογίες (24/11/2026) */
 @media (max-width:760px){.ct-photo{aspect-ratio:1/1}.ct-photo img{object-position:50% 50%}}
+/* Επικοινωνία: τετράγωνη φωτογραφία στον υπολογιστή, χωρίς κόψιμο (24/11/2026) */
+@media (min-width:1025px){.ct-card{grid-template-columns:minmax(0,1fr) min(48%,580px)}.ct-photo{min-height:0;aspect-ratio:1/1}.ct-photo img{object-position:50% 50%}.ct-info{align-self:center}}
