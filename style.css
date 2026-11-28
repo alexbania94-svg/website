@@ -516,7 +516,7 @@ nav.main a{white-space:nowrap}
 
 /* Λωρίδα εμπιστοσύνης (εκδοχή Α) */
 .trustA{background:var(--paper);border-bottom:1px solid var(--line)}
-.trustA .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;padding-top:26px;padding-bottom:26px;align-items:center}
+.trustA .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;padding-top:26px;padding-bottom:26px;align-items:center}
 .trustA .it{display:flex;gap:14px;align-items:center;font-size:.95rem;line-height:1.4;color:var(--deep)}
 .trustA svg{flex:none;width:38px;height:38px;padding:8px;border-radius:50%;background:#E6EDE7;fill:none;stroke:var(--green);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .trustA small{display:block;color:var(--muted);font-size:.85rem;margin-top:2px}
@@ -1153,7 +1153,7 @@ header.site .logo img{height:60px}
  .ah-grid .article-img img{aspect-ratio:4/4.4}
  .article-body .prose{grid-template-columns:minmax(0,1fr) 210px;column-gap:26px}
 }
-#pos-grafo{margin-top:1.3em}
+#pos-grafo,#pos-synechizo-na-mathaino{margin-top:1.3em}
 /* v36: Πηγές, πράσινο «Κλείστε ραντεβού» και γραμμή Instagram έξω από τη στήλη του κειμένου, σε όλο το πλάτος (τα περιεχόμενα σταματούν στη γραμμή των Πηγών) */
 .article-body .wrap>.follow-line{margin-top:22px}
 /* v24: Επικοινωνία: τα κουτιά ραντεβού μέσα στην αρχή της σελίδας.
@@ -1588,3 +1588,6 @@ section.block.more-topics{padding-top:0}
 @media (max-width:760px){.ct-photo{aspect-ratio:1/1}.ct-photo img{object-position:50% 50%}}
 /* Επικοινωνία: τετράγωνη φωτογραφία στον υπολογιστή, χωρίς κόψιμο (24/11/2026) */
 @media (min-width:1025px){.ct-card{grid-template-columns:minmax(0,1fr) min(48%,580px)}.ct-photo{min-height:0;aspect-ratio:1/1}.ct-photo img{object-position:50% 50%}.ct-info{align-self:center}}
+@media (min-width:761px) and (max-width:1100px){.trustA .wrap{grid-template-columns:repeat(2,1fr)}}
+.prose .art-end{margin-top:2.4em;padding-top:1.3em;border-top:1px solid var(--line);align-items:center;gap:10px 14px}
+.art-end-q{margin:0;flex-basis:100%;font-size:.95rem;color:var(--muted)}
